@@ -1,0 +1,217 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap");
+:root {
+  --clr-primary-blue: hsl(246, 80%, 60%);
+  --clr-light-red: hsl(15, 100%, 70%);
+  --clr-soft-blue: hsl(195, 74%, 62%);
+  --clr-red: hsl(348, 100%, 68%);
+  --clr-green: hsl(145, 58%, 55%);
+  --clr-violet: hsl(264, 64%, 52%);
+  --clr-orange: hsl(43, 84%, 65%);
+  --clr-dark-blue: hsl(226, 43%, 10%);
+  --clr-neutral-blue: hsl(235, 46%, 20%);
+  --clr-light-blue: hsl(235, 45%, 61%);
+  --clr-pale-blue: hsl(236, 100%, 87%);
+  --ff-default: "Rubik", sans-serif;
+  --fw-light: 300;
+  --fw-normal: 400;
+  --fw-bold: 500;
+  --fs-default: 1.125em;
+}
+
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+svg {
+  float: right;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--ff-default);
+  background: var(--clr-dark-blue);
+  color: var(--clr-pale-blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.container {
+  width: 78%;
+  display: grid;
+  grid-template-columns: 250px auto;
+  gap: 1.5rem;
+  margin: 2.5% auto;
+}
+@media (max-width: 71.8125em) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.personal-data {
+  background-color: var(--clr-neutral-blue);
+  border-radius: 1.5rem;
+}
+.personal-data .intro {
+  background-color: var(--clr-primary-blue);
+  padding: 0.75em;
+  position: relative;
+  z-index: 2;
+  border-radius: 1.6rem;
+  font-size: 2.5rem;
+}
+@media (max-width: 71.8125em) {
+  .personal-data .intro {
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 1rem;
+    align-items: center;
+  }
+}
+.personal-data .intro img {
+  width: 45%;
+  height: auto;
+  border: 3px solid #fff;
+  border-radius: 50%;
+}
+@media (max-width: 71.8125em) {
+  .personal-data .intro img {
+    width: 30%;
+  }
+}
+.personal-data .intro p {
+  color: #fff;
+  font-weight: var(--fw-light);
+}
+@media (max-width: 71.8125em) {
+  .personal-data .intro p {
+    margin: 0;
+  }
+}
+.personal-data .intro span {
+  display: block;
+}
+.personal-data .intro .report {
+  font-size: 1rem;
+  color: var(--clr-pale-blue);
+}
+.personal-data .time-scope {
+  justify-content: center;
+  padding: 1rem 1.75rem;
+}
+@media (max-width: 71.8125em) {
+  .personal-data .time-scope {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+  }
+}
+.personal-data .time-scope p:hover {
+  color: #fff;
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 1.2rem;
+}
+@media (max-width: 71.8125em) {
+  .cards-container {
+    grid-template-columns: 1fr;
+    gap: 3.8rem;
+  }
+}
+.cards-container .card {
+  border-radius: 1.5rem;
+  position: relative;
+}
+.cards-container .card .card-content {
+  position: relative;
+  height: 80%;
+  bottom: -21%;
+  background-color: var(--clr-neutral-blue);
+  border-radius: 1.2rem;
+  padding: 1rem 1rem 0 1rem;
+}
+@media (max-width: 71.8125em) {
+  .cards-container .card .card-content {
+    height: 100%;
+  }
+}
+.cards-container .row-one {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.cards-container .row-one p {
+  color: #fff;
+}
+.cards-container .row-two {
+  text-align: left;
+  color: #fff;
+}
+.cards-container .row-two .current {
+  font-size: 3.4375rem;
+  font-weight: var(--fw-light);
+  margin: 0;
+  padding-top: 1rem;
+}
+@media (max-width: 71.8125em) {
+  .cards-container .row-two .current {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    font-size: 3rem;
+    margin: 1rem 0;
+  }
+}
+.cards-container .row-two p span {
+  font-size: 0.75rem;
+  display: block;
+  color: var(--clr-pale-blue);
+  margin-top: 0.5rem;
+}
+
+.work {
+  background-color: var(--clr-light-red);
+}
+
+.exercise {
+  background-color: var(--clr-green);
+}
+
+.play {
+  background-color: var(--clr-soft-blue);
+}
+
+.social {
+  background-color: var(--clr-violet);
+}
+
+.study {
+  background-color: var(--clr-red);
+}
+
+.care {
+  background-color: var(--clr-orange);
+}
+
+.icon {
+  position: absolute;
+  top: 5px;
+  right: 20px;
+}/*# sourceMappingURL=style.css.map */
